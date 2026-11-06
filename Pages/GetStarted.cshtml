@@ -1,0 +1,51 @@
+@page
+@{
+    Layout = "_AuthLayout";
+    ViewData["Title"] = "Get Started";
+}
+
+<section class="auth-main auth-register" aria-labelledby="get-started-title">
+    <div class="shell auth-register-layout">
+        <div class="auth-register-intro">
+            <p class="auth-eyebrow">Get started</p>
+            <h1 id="get-started-title">Join Firmlon HydroSentinel</h1>
+            <p>Create your account and take the first step towards smarter water management.</p>
+            <ul class="auth-benefits" aria-label="Getting started focus areas">
+                <li class="auth-benefit"><span class="auth-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h5"/></svg></span><span><strong>Share your context</strong><span>Prepare for a future product conversation with Firmlon.</span></span></li>
+                <li class="auth-benefit"><span class="auth-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 20 6v5c0 5-3.4 8.4-8 10-4.6-1.6-8-5-8-10V6z"/><path d="M9 12h6M12 9v6"/></svg></span><span><strong>Explore the right fit</strong><span>Discuss product scope and installation context.</span></span></li>
+                <li class="auth-benefit"><span class="auth-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h14v16H5z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span><span><strong>Move forward deliberately</strong><span>This preview does not create an account or collect data.</span></span></li>
+            </ul>
+            <figure class="auth-photo-frame">
+                <img src="~/images/water-infrastructure.jfif" alt="Water infrastructure and treatment equipment used as contextual imagery for HydroSentinel" width="1412" height="768" loading="eager" fetchpriority="high" />
+            </figure>
+        </div>
+
+        <div class="auth-panel auth-start-panel">
+            <h2>Create your account</h2>
+            <p>Set up your details here when the secure account workflow is connected.</p>
+            <div class="auth-notice" role="note"><strong>Preview only:</strong> registration, password storage, email verification, and account creation are not connected yet. Nothing entered here is submitted or stored.</div>
+            <form class="auth-form" aria-label="Create account preview">
+                <fieldset class="auth-fields">
+                    <legend class="sr-only">Account details</legend>
+                    <div class="auth-field"><label for="start-name">Full name</label><input id="start-name" type="text" autocomplete="name" placeholder="Enter your full name" disabled /></div>
+                    <div class="auth-field"><label for="start-email">Email address</label><input id="start-email" type="email" autocomplete="email" placeholder="Enter your email address" disabled /></div>
+                    <div class="auth-field"><label for="start-phone">Phone number <span>(optional)</span></label><input id="start-phone" type="tel" autocomplete="tel" placeholder="Enter your phone number" disabled /></div>
+                    <div class="auth-field"><label for="start-password">Password</label><input id="start-password" type="password" autocomplete="new-password" placeholder="Create a password" disabled /></div>
+                    <div class="auth-field"><label for="start-confirm-password">Confirm password</label><input id="start-confirm-password" type="password" autocomplete="new-password" placeholder="Confirm your password" disabled /></div>
+                </fieldset>
+                <label class="auth-check"><input type="checkbox" disabled /> <span>I agree to the Terms of Service and Privacy Policy when those documents and account workflows are available.</span></label>
+                <button class="button button-primary auth-submit" type="button" disabled>Create account <span aria-hidden="true">&rarr;</span></button>
+            </form>
+            <p class="auth-secondary">Already have an account? <a asp-page="/Login">Sign in</a></p>
+        </div>
+    </div>
+    <section class="shell auth-support-strip" aria-labelledby="auth-support-title">
+        <div class="auth-support-intro">
+            <h2 id="auth-support-title">Why Choose HydroSentinel?</h2>
+            <p>Get a clearer starting point for conversations about water-system monitoring, protection, and management.</p>
+        </div>
+        <div class="auth-support-item"><span class="auth-support-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="8.5"/></svg></span><div><strong>Reliable</strong><span>Built around practical water-system needs.</span></div></div>
+        <div class="auth-support-item"><span class="auth-support-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 3 8 3v5c0 5-3.4 8.4-8 10-4.6-1.6-8-5-8-10V6z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></svg></span><div><strong>Secure by design</strong><span>Designed to support responsible account workflows.</span></div></div>
+        <div class="auth-support-item"><span class="auth-support-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 14.5-4.6L21 10"/><path d="M20 4v6h-6"/><path d="M20 12a8 8 0 0 1-14.5 4.6L3 14"/><path d="M4 20v-6h6"/></svg></span><div><strong>Ongoing support</strong><span>Start with a clear path to the Firmlon team.</span></div></div>
+    </section>
+</section>
